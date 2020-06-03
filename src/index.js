@@ -6,15 +6,15 @@ document.addEventListener("DOMContentLoaded", () => {
   taskForm.addEventListener("submit", createNewTask);
 });
 
-const createNewTask = (event) => {
+function createNewTask(event) {
   event.preventDefault();
   const taskDescription = document.getElementById("new-task-description");
   const newTask = document.createElement("li");
   newTask.innerText = taskDescription.value;
   addNewTask(newTask);
   event.target.reset();
-};
+}
 
-const addNewTask = (task) => {
+function addNewTask(task) {
   document.getElementById("tasks").append(task);
-};
+}

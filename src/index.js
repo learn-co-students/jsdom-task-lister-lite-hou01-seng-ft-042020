@@ -24,13 +24,4 @@ document.addEventListener("DOMContentLoaded", () => {
     form.reset();
   });
 
-
 });
-
-  // fetch(`${url}`)
-  // .then(res => res.json())
-  // .then(json => {
-  //   for (const list of json) {
-  //     createTodoList(list);
-  //   }
-  // })
